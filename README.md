@@ -1,1 +1,1 @@
-# week07-project1-snapchat
+# Week07 Project1: Snapchat
