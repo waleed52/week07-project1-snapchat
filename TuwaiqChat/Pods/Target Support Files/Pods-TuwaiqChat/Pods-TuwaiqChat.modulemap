@@ -1,0 +1,6 @@
+framework module Pods_TuwaiqChat {
+  umbrella header "Pods-TuwaiqChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
