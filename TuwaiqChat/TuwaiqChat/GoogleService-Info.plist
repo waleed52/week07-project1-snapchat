@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>484410726565-e7iabdb1v0nu7h9gkik3nvvdv8t33lml.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.484410726565-e7iabdb1v0nu7h9gkik3nvvdv8t33lml</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAbJzS68H9Cvtnx3ZMY9Ttfi4gfeWeqa8U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>484410726565</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mun.TuwaiqChat</string>
+	<key>PROJECT_ID</key>
+	<string>tuwaiq-chat</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tuwaiq-chat.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:484410726565:ios:c53dda6845df3a6380954c</string>
+</dict>
+</plist>
