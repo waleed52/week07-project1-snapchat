@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10024AD827406FF1004FDC55 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10024AD727406FF1004FDC55 /* GoogleService-Info.plist */; };
+		10024ADA2740792F004FDC55 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10024AD92740792F004FDC55 /* UserProfileVC.swift */; };
+		10177783274041A000A998E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10177782274041A000A998E0 /* AppDelegate.swift */; };
+		10177785274041A000A998E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10177784274041A000A998E0 /* SceneDelegate.swift */; };
+		10177787274041A000A998E0 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10177786274041A000A998E0 /* SignInVC.swift */; };
+		1017778C274041A100A998E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1017778B274041A100A998E0 /* Assets.xcassets */; };
+		1017778F274041A100A998E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1017778D274041A100A998E0 /* LaunchScreen.storyboard */; };
+		10177797274048AF00A998E0 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10177796274048AF00A998E0 /* CustomTextFieldView.swift */; };
+		101777992740534000A998E0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101777982740534000A998E0 /* Extensions.swift */; };
+		1017779C274055A400A998E0 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1017779B274055A400A998E0 /* SignUpVC.swift */; };
+		1017779E2740599600A998E0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1017779D2740599600A998E0 /* MainVC.swift */; };
+		101777A027405D8900A998E0 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1017779F27405D8900A998E0 /* CustomCell.swift */; };
+		35A519FE24D2DE705E0CAC54 /* Pods_TuwaiqChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0E054A4302813F976C2A51 /* Pods_TuwaiqChat.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10024AD727406FF1004FDC55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		10024AD92740792F004FDC55 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
+		1017777F274041A000A998E0 /* TuwaiqChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuwaiqChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10177782274041A000A998E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		10177784274041A000A998E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		10177786274041A000A998E0 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		1017778B274041A100A998E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1017778E274041A100A998E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		10177790274041A100A998E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10177796274048AF00A998E0 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
+		101777982740534000A998E0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1017779B274055A400A998E0 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		1017779D2740599600A998E0 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		1017779F27405D8900A998E0 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		2E04192C4524D62425A2C1F8 /* Pods-TuwaiqChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuwaiqChat.debug.xcconfig"; path = "Target Support Files/Pods-TuwaiqChat/Pods-TuwaiqChat.debug.xcconfig"; sourceTree = "<group>"; };
+		7F0E054A4302813F976C2A51 /* Pods_TuwaiqChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuwaiqChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4017307D929D6F6643768CD /* Pods-TuwaiqChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuwaiqChat.release.xcconfig"; path = "Target Support Files/Pods-TuwaiqChat/Pods-TuwaiqChat.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1017777C274041A000A998E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A519FE24D2DE705E0CAC54 /* Pods_TuwaiqChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10177776274041A000A998E0 = {
+			isa = PBXGroup;
+			children = (
+				10177781274041A000A998E0 /* TuwaiqChat */,
+				10177780274041A000A998E0 /* Products */,
+				BE853C88CE9D078B3E111B4E /* Pods */,
+				2B8A2800C1CF299F8AC916B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		10177780274041A000A998E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1017777F274041A000A998E0 /* TuwaiqChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10177781274041A000A998E0 /* TuwaiqChat */ = {
+			isa = PBXGroup;
+			children = (
+				10177782274041A000A998E0 /* AppDelegate.swift */,
+				10177784274041A000A998E0 /* SceneDelegate.swift */,
+				10177786274041A000A998E0 /* SignInVC.swift */,
+				1017779B274055A400A998E0 /* SignUpVC.swift */,
+				1017779D2740599600A998E0 /* MainVC.swift */,
+				10024AD92740792F004FDC55 /* UserProfileVC.swift */,
+				1017779F27405D8900A998E0 /* CustomCell.swift */,
+				101777982740534000A998E0 /* Extensions.swift */,
+				10177796274048AF00A998E0 /* CustomTextFieldView.swift */,
+				1017778B274041A100A998E0 /* Assets.xcassets */,
+				1017778D274041A100A998E0 /* LaunchScreen.storyboard */,
+				10177790274041A100A998E0 /* Info.plist */,
+				10024AD727406FF1004FDC55 /* GoogleService-Info.plist */,
+			);
+			path = TuwaiqChat;
+			sourceTree = "<group>";
+		};
+		2B8A2800C1CF299F8AC916B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F0E054A4302813F976C2A51 /* Pods_TuwaiqChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE853C88CE9D078B3E111B4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E04192C4524D62425A2C1F8 /* Pods-TuwaiqChat.debug.xcconfig */,
+				E4017307D929D6F6643768CD /* Pods-TuwaiqChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1017777E274041A000A998E0 /* TuwaiqChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10177793274041A100A998E0 /* Build configuration list for PBXNativeTarget "TuwaiqChat" */;
+			buildPhases = (
+				6C0C11546A1A9F90903049E9 /* [CP] Check Pods Manifest.lock */,
+				1017777B274041A000A998E0 /* Sources */,
+				1017777C274041A000A998E0 /* Frameworks */,
+				1017777D274041A000A998E0 /* Resources */,
+				310A370391E13026A47CA388 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TuwaiqChat;
+			productName = TuwaiqChat;
+			productReference = 1017777F274041A000A998E0 /* TuwaiqChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10177777274041A000A998E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					1017777E274041A000A998E0 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 1017777A274041A000A998E0 /* Build configuration list for PBXProject "TuwaiqChat" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10177776274041A000A998E0;
+			productRefGroup = 10177780274041A000A998E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1017777E274041A000A998E0 /* TuwaiqChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1017777D274041A000A998E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10024AD827406FF1004FDC55 /* GoogleService-Info.plist in Resources */,
+				1017778F274041A100A998E0 /* LaunchScreen.storyboard in Resources */,
+				1017778C274041A100A998E0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		310A370391E13026A47CA388 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuwaiqChat/Pods-TuwaiqChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuwaiqChat/Pods-TuwaiqChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuwaiqChat/Pods-TuwaiqChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C0C11546A1A9F90903049E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuwaiqChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1017777B274041A000A998E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				101777992740534000A998E0 /* Extensions.swift in Sources */,
+				10177797274048AF00A998E0 /* CustomTextFieldView.swift in Sources */,
+				10177787274041A000A998E0 /* SignInVC.swift in Sources */,
+				10177783274041A000A998E0 /* AppDelegate.swift in Sources */,
+				1017779C274055A400A998E0 /* SignUpVC.swift in Sources */,
+				10024ADA2740792F004FDC55 /* UserProfileVC.swift in Sources */,
+				101777A027405D8900A998E0 /* CustomCell.swift in Sources */,
+				10177785274041A000A998E0 /* SceneDelegate.swift in Sources */,
+				1017779E2740599600A998E0 /* MainVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1017778D274041A100A998E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1017778E274041A100A998E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10177791274041A100A998E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10177792274041A100A998E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10177794274041A100A998E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E04192C4524D62425A2C1F8 /* Pods-TuwaiqChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TuwaiqChat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mun.TuwaiqChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10177795274041A100A998E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4017307D929D6F6643768CD /* Pods-TuwaiqChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TuwaiqChat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mun.TuwaiqChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1017777A274041A000A998E0 /* Build configuration list for PBXProject "TuwaiqChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10177791274041A100A998E0 /* Debug */,
+				10177792274041A100A998E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10177793274041A100A998E0 /* Build configuration list for PBXNativeTarget "TuwaiqChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10177794274041A100A998E0 /* Debug */,
+				10177795274041A100A998E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10177777274041A000A998E0 /* Project object */;
+}
