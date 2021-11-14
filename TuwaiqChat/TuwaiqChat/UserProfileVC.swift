@@ -23,6 +23,12 @@ class UserProfileVC : UIViewController {
         setupImagePicker()
         readImageFromFirestore()
         
+import Firebase
+
+class UserProfileVC : UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
         
         guard let userID = Auth.auth().currentUser?.uid else {return}
         Firestore.firestore().collection("Users").document(userID).getDocument { document, error in
@@ -38,6 +44,7 @@ class UserProfileVC : UIViewController {
         
     }
     
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         fetchCurrentUsers()
@@ -45,6 +52,7 @@ class UserProfileVC : UIViewController {
     }
     
     
+
     
     let userImage : UIImageView = {
         $0.tintColor = .lightGray
@@ -82,11 +90,13 @@ extension UserProfileVC {
         view.addSubview(userNameLabel)
         view.addSubview(emailLabel)
         
+
         userImage.tintColor = .systemBlue
         userImage.isUserInteractionEnabled = true
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         userImage.addGestureRecognizer(tapRecognizer)
         view.addSubview(userImage)
+
         NSLayoutConstraint.activate([
             userImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
             userImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -105,6 +115,7 @@ extension UserProfileVC {
             
         ])
     }
+
     
     func setupImagePicker() {
         
@@ -246,4 +257,5 @@ extension UserProfileVC: UIImagePickerControllerDelegate, UINavigationController
     
     
     
+
 }

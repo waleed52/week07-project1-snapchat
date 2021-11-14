@@ -21,6 +21,8 @@ class MainVC : UIViewController {
         navigationController?.pushViewController(UserProfileVC(), animated: true)
     }
    
+
+    
     let searchBar : CustomTextFieldView = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.textField.placeholder = "search..."
