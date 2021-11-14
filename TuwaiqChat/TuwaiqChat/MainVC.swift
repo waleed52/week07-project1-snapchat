@@ -20,6 +20,8 @@ class MainVC : UIViewController {
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationController?.pushViewController(UserProfileVC(), animated: true)
     }
+   
+
     
     let searchBar : CustomTextFieldView = {
         $0.translatesAutoresizingMaskIntoConstraints = false
