@@ -2,7 +2,7 @@
 //  Extensions.swift
 //  TuwaiqChat
 //
-//  Created by PC  on 08/04/1443 AH.
+//  Created by PC on 08/04/1443 AH.
 //
 
 import UIKit

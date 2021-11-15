@@ -6,11 +6,17 @@
 //
 
 import UIKit
+import Firebase
+import SDWebImage
 
 class MainVC : UIViewController {
+    
+    var users = [User]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        getAllUsers()
         
         let profileButton = UIBarButtonItem(image: UIImage(systemName: "person.circle.fill"), style: .plain, target: self, action: #selector(showProfile))
         navigationItem.rightBarButtonItem = profileButton
@@ -37,6 +43,23 @@ class MainVC : UIViewController {
         $0.backgroundColor = .clear
         return $0
     }(UITableView())
+    
+    
+    func getAllUsers() {
+        Firestore.firestore().collection("Users").addSnapshotListener { snapshot, error in
+            if error == nil {
+                if let value = snapshot?.documents {
+                    for user in value {
+                        let userData = user.data()
+                        
+                            
+                            self.users.append(User(id: userData["id"] as? String, name: userData["name"] as? String, email: userData["email"] as? String, profileImage: userData["profileImage"] as? String))
+                    }
+                }
+                self.usersTableView.reloadData()
+            }
+        }
+    }
 }
 
 
@@ -66,13 +89,25 @@ extension MainVC {
 
 extension MainVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return users.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = usersTableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomCell
-        cell.nameLabel.text = "Munirah"
+        cell.nameLabel.text = users[indexPath.row].name
+
+        if let imageURL = users[indexPath.row].profileImage {
+            cell.userImage.sd_setImage(with: URL(string: imageURL), completed: nil)
+        }
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = DirectMessageVC()
+        vc.user = users[indexPath.row]
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

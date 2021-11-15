@@ -2,13 +2,13 @@
 //  SignUpVC.swift
 //  TuwaiqChat
 //
-//  Created by PC  on 08/04/1443 AH.
+//  Created by PC on 08/04/1443 AH.
 //
 
 import UIKit
 import Firebase
 
-class SignUpVC: UIViewController {
+class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,12 +17,59 @@ class SignUpVC: UIViewController {
     }
     
     
-    let profileImage : UIImageView = {
+    lazy var profileImage : UIImageView = {
         $0.tintColor = .lightGray
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.image = UIImage(systemName: "person.circle.fill")
+        $0.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageAction)))
+        $0.isUserInteractionEnabled = true
+        $0.layer.cornerRadius = 50
+        $0.clipsToBounds = true
+        $0.contentMode = .scaleAspectFill
         return $0
     }(UIImageView())
+    
+    @objc func imageAction() {
+        
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        
+        let actionSheet = UIAlertController(title: "Photo Source", message: "Choose a source", preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (UIAlertAction) in
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                imagePickerController.sourceType = .camera
+                self.present(imagePickerController, animated: true, completion: nil)
+            }
+            else {
+                // show alert message
+                print("Camera not available")
+            }
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (UIAlertAction) in
+            imagePickerController.sourceType = .photoLibrary
+            self.present(imagePickerController, animated: true, completion: nil)
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (UIAlertAction) in
+            
+        }))
+        
+        self.present(actionSheet, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+
+        profileImage.image = image
+        profileImageSuccess = true
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
  
     
     lazy var fieldsStackView : UIStackView = {
@@ -65,6 +112,7 @@ class SignUpVC: UIViewController {
     var nameSuccess = false
     var emailSuccess = false
     var passwordSuccess = false
+    var profileImageSuccess = false
     
     @objc func signupAction() {
         if let name = nameView.textField.text, name.isEmpty == false {
@@ -101,18 +149,60 @@ class SignUpVC: UIViewController {
                 if error == nil {
                     guard let userID = result?.user.uid else {return}
                     
-                    Firestore.firestore().collection("Users").document(userID).setData([
-                        "name" : self.nameView.textField.text!,
-                        "email" : self.emailView.textField.text!,
-                        "id" : userID
-                    ]) { error in
-                        if error == nil {
-                            let vc = UINavigationController(rootViewController: MainVC())
-                            vc.modalTransitionStyle = .crossDissolve
-                            vc.modalPresentationStyle = .fullScreen
-                            self.present(vc, animated: true, completion: nil)
+                    if self.profileImageSuccess {
+                        let storage = Storage.storage().reference()
+                        let imageRef = storage.child("ProfileImages").child(userID)
+                        
+                        guard let profileImageData = self.profileImage.image?.pngData() else {return}
+                        
+                        imageRef.putData(profileImageData, metadata: nil) { meta, error in
+                            if error == nil {
+                                imageRef.downloadURL { url, error in
+                                    if error == nil {
+                                        let imageUrlString = url?.absoluteString
+                                        
+                                        Firestore.firestore().collection("Users").document(userID).setData([
+                                            "name" : self.nameView.textField.text!,
+                                            "email" : self.emailView.textField.text!,
+                                            "id" : userID,
+                                            "profileImage" : imageUrlString
+                                        ]) { error in
+                                            if error == nil {
+                                                DispatchQueue.main.async {
+                                                    let vc = UINavigationController(rootViewController: MainVC())
+                                                    vc.modalTransitionStyle = .crossDissolve
+                                                    vc.modalPresentationStyle = .fullScreen
+                                                    self.present(vc, animated: true, completion: nil)
+                                                }
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                    
+                    else {
+                        Firestore.firestore().collection("Users").document(userID).setData([
+                            "name" : self.nameView.textField.text!,
+                            "email" : self.emailView.textField.text!,
+                            "id" : userID,
+                            "profileImage" : nil
+                        ]) { error in
+                            if error == nil {
+                                DispatchQueue.main.async {
+                                    let vc = UINavigationController(rootViewController: MainVC())
+                                    vc.modalTransitionStyle = .crossDissolve
+                                    vc.modalPresentationStyle = .fullScreen
+                                    self.present(vc, animated: true, completion: nil)
+                                }
+                            }
                         }
                     }
+                    
+                    
                 }
             }
         }

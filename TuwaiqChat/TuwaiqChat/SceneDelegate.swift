@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  TuwaiqChat
 //
-//  Created by PC  on 08/04/1443 AH.
+//  Created by PC on 08/04/1443 AH.
 //
 
 import UIKit
@@ -19,8 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
                
                window = UIWindow(frame: UIScreen.main.bounds)
-               let viewController = SignInVC()
-               window?.rootViewController = UINavigationController(rootViewController: viewController)
+               let viewController = LoginValidationVC()
+               window?.rootViewController = viewController
                window?.makeKeyAndVisible()
                window?.windowScene = windowScene
     }

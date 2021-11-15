@@ -31,6 +31,7 @@ class CustomTextFieldView : UIView {
     
     let textField : UITextField = {
         $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.tintColor = .white
         $0.backgroundColor = .clear
         $0.textColor = .white
         $0.layer.cornerRadius = 20

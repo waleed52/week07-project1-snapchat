@@ -63,6 +63,11 @@ class CustomCell : UITableViewCell {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.image = UIImage(systemName: "person.circle.fill")
         $0.tintColor = .init(white: 0.85, alpha: 1)
+        $0.layer.cornerRadius = 30
+        $0.clipsToBounds = true
+        $0.contentMode = .scaleAspectFill
+        $0.layer.borderColor = UIColor.init(white: 0.90, alpha: 1).cgColor
+        $0.layer.borderWidth = 1
         return $0
     }(UIImageView())
     

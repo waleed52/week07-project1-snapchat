@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		10024AD827406FF1004FDC55 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10024AD727406FF1004FDC55 /* GoogleService-Info.plist */; };
 		10024ADA2740792F004FDC55 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10024AD92740792F004FDC55 /* UserProfileVC.swift */; };
+		100386CC27418D57002A8B31 /* LoginValidationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100386CB27418D57002A8B31 /* LoginValidationVC.swift */; };
+		100386CE27418FDB002A8B31 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100386CD27418FDB002A8B31 /* Model.swift */; };
+		100386D027419B15002A8B31 /* DirectMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100386CF27419B15002A8B31 /* DirectMessageVC.swift */; };
+		100386D227419D5D002A8B31 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100386D127419D5D002A8B31 /* MessageCell.swift */; };
 		10177783274041A000A998E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10177782274041A000A998E0 /* AppDelegate.swift */; };
 		10177785274041A000A998E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10177784274041A000A998E0 /* SceneDelegate.swift */; };
 		10177787274041A000A998E0 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10177786274041A000A998E0 /* SignInVC.swift */; };
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		10024AD727406FF1004FDC55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		10024AD92740792F004FDC55 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
+		100386CB27418D57002A8B31 /* LoginValidationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidationVC.swift; sourceTree = "<group>"; };
+		100386CD27418FDB002A8B31 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		100386CF27419B15002A8B31 /* DirectMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageVC.swift; sourceTree = "<group>"; };
+		100386D127419D5D002A8B31 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		1017777F274041A000A998E0 /* TuwaiqChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuwaiqChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10177782274041A000A998E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10177784274041A000A998E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +85,8 @@
 			children = (
 				10177782274041A000A998E0 /* AppDelegate.swift */,
 				10177784274041A000A998E0 /* SceneDelegate.swift */,
+				100386CD27418FDB002A8B31 /* Model.swift */,
+				100386CB27418D57002A8B31 /* LoginValidationVC.swift */,
 				10177786274041A000A998E0 /* SignInVC.swift */,
 				1017779B274055A400A998E0 /* SignUpVC.swift */,
 				1017779D2740599600A998E0 /* MainVC.swift */,
@@ -84,6 +94,8 @@
 				1017779F27405D8900A998E0 /* CustomCell.swift */,
 				101777982740534000A998E0 /* Extensions.swift */,
 				10177796274048AF00A998E0 /* CustomTextFieldView.swift */,
+				100386CF27419B15002A8B31 /* DirectMessageVC.swift */,
+				100386D127419D5D002A8B31 /* MessageCell.swift */,
 				1017778B274041A100A998E0 /* Assets.xcassets */,
 				1017778D274041A100A998E0 /* LaunchScreen.storyboard */,
 				10177790274041A100A998E0 /* Info.plist */,
@@ -228,9 +240,13 @@
 				10177797274048AF00A998E0 /* CustomTextFieldView.swift in Sources */,
 				10177787274041A000A998E0 /* SignInVC.swift in Sources */,
 				10177783274041A000A998E0 /* AppDelegate.swift in Sources */,
+				100386D227419D5D002A8B31 /* MessageCell.swift in Sources */,
 				1017779C274055A400A998E0 /* SignUpVC.swift in Sources */,
+				100386CC27418D57002A8B31 /* LoginValidationVC.swift in Sources */,
 				10024ADA2740792F004FDC55 /* UserProfileVC.swift in Sources */,
 				101777A027405D8900A998E0 /* CustomCell.swift in Sources */,
+				100386CE27418FDB002A8B31 /* Model.swift in Sources */,
+				100386D027419B15002A8B31 /* DirectMessageVC.swift in Sources */,
 				10177785274041A000A998E0 /* SceneDelegate.swift in Sources */,
 				1017779E2740599600A998E0 /* MainVC.swift in Sources */,
 			);

@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import SDWebImage
 
 class UserProfileVC : UIViewController {
     override func viewDidLoad() {
@@ -20,6 +21,23 @@ class UserProfileVC : UIViewController {
                     DispatchQueue.main.async {
                         self.userNameLabel.text = userData["name"] as? String
                         self.emailLabel.text = userData["email"] as? String
+                        
+                        if let profileImage = userData["profileImage"] as? String {
+                            
+                            let imageURL = URL(string: profileImage)
+                            
+                            self.userImage.sd_setImage(with: imageURL) { image, error, cache, url in
+                                if error == nil {
+                                    DispatchQueue.main.async {
+                                        self.userImage.image = image
+                                    }
+                                }
+                            }
+                            
+                        } else {
+                            self.userImage.image = UIImage(systemName: "person.circle.fill")
+                        }
+                        
                     }
                 }
             }
@@ -31,7 +49,8 @@ class UserProfileVC : UIViewController {
     let userImage : UIImageView = {
         $0.tintColor = .lightGray
         $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.image = UIImage(systemName: "person.circle.fill")
+        $0.layer.cornerRadius = 50
+        $0.clipsToBounds = true
         return $0
     }(UIImageView())
     
